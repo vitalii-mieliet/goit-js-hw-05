@@ -15,9 +15,14 @@
 
 Метод filter() можна використовувати для створення нового масиву з елементами, які задовольняють певну умову.
 Використовуй метод includes() для перевірки, чи масив friends містить friendName.*/
+
 //!================================================================
+
 'use strict';
 console.log('\nTask-2\n');
+
+const getUsersWithFriend = (users, friendName) =>
+  users.filter(user => user.friends.includes(friendName));
 
 const allUsers = [
   {
