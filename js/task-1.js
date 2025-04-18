@@ -6,6 +6,8 @@
 'use strict';
 console.log('\nTask-1\n');
 
+const getUserNames = users => users.map(user => user.name);
+
 console.log(
   getUserNames([
     {
