@@ -8,6 +8,10 @@
 'use strict';
 console.log('\nTask-3\n');
 
+const sortByDescendingFriendCount = users => {
+  return users.toSorted((a, b) => b.friends.length - a.friends.length);
+};
+
 console.log(
   sortByDescendingFriendCount([
     {
